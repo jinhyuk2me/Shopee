@@ -37,7 +37,7 @@
     <tr>
       <td align="center"><b>Main</b></td>
       <td align="center">Jang Jinhyuk</td>
-      <td>System Design & Communication, Main Server Implementation</td>
+      <td>Entire System & Communication Interface Design, Main Server (Backend) Implementation, Control System Design & Implementation</td>
     </tr>
     <tr>
       <td align="center"><b>App</b></td>
@@ -203,6 +203,58 @@
   <tr>
     <td valign="top">Inventory/Task History</td>
     <td valign="top">Supports inventory management and viewing of past task history.</td>
+  </tr>
+</table>
+
+</div>
+
+### 🖥️ Admin Dashboard Feature Examples (Main Service Dashboard)
+**Modular UI-based Integrated Control System** (Designed & Implemented by Jang Jinhyuk)
+*(The dashboard provides various functions such as robot status, order management, and ROS2/TCP monitoring via tabs. Below are examples of some key features.)*
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" width="100%">
+      <img src="assets/images/admin_dashboard_status.png" width="95%"><br>
+      <b>1. Integrated Robot Status Monitoring</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li><b>Real-time Connection Status</b>: Monitors Online/Offline/IDLE status of all Pickee/Packee robots based on Heartbeat.</li>
+        <li><b>Status/Location Info</b>: Checks battery level, current location (navigation coordinates), and basket attachment status at a glance.</li>
+        <li><b>Task Tracking</b>: Tracks assigned Order ID and last communication time to immediately detect system freezing or deviation.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/images/admin_dashboard_ros2.png" width="100%"><br>
+      <b>2. Deep Analysis of ROS2 Services/Topics</b>
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/images/admin_dashboard_tcp.png" width="100%"><br>
+      <b>3. TCP/IP Data Packet Debugging</b>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <ul>
+        <li><b>Service Call History</b>: Records Request/Response and Latency of key logic like <code>get_location_pose</code>, <code>workflow</code>.</li>
+        <li><b>Real-time Debugging</b>: Instantly captures Error Messages upon service failure to support remote debugging.</li>
+      </ul>
+    </td>
+    <td valign="top">
+      <ul>
+        <li><b>JSON Packet Monitoring</b>: Captures low-level JSON packets (e.g., <code>order_create</code>) exchanged between App-Server-Robot.</li>
+        <li><b>Data Integrity Verification</b>: Verifies schema consistency of transmitted/received data in real-time to ensure communication reliability.</li>
+      </ul>
+    </td>
   </tr>
 </table>
 </div>

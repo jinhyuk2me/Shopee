@@ -37,7 +37,7 @@
     <tr>
       <td align="center"><b>Main</b></td>
       <td align="center">장진혁</td>
-      <td>시스템 설계 및 통신, 메인 서버 구축</td>
+      <td>전체 시스템 및 통신 인터페이스 설계, Main Server (Backend) 구현, 관제 시스템 설계 및 구현</td>
     </tr>
     <tr>
       <td align="center"><b>App</b></td>
@@ -203,6 +203,57 @@
   <tr>
     <td valign="top">재고/작업 이력</td>
     <td valign="top">재고 관리, 작업 히스토리 조회를 지원합니다.</td>
+  </tr>
+</table>
+</div>
+
+### 🖥️ 관제 시스템 주요 기능 예시 (Main Service Dashboard Examples)
+**Modular UI 기반 통합 관제 시스템** (Designed & Implemented by Jang Jinhyuk)
+*(본 대시보드는 로봇 상태, 주문 관리, ROS2/TCP 모니터링 등 다양한 기능을 탭 형태로 제공하며, 아래는 그 중 일부 핵심 기능의 예시입니다.)*
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" width="100%">
+      <img src="assets/images/admin_dashboard_status.png" width="95%"><br>
+      <b>1. 로봇 통합 상태 모니터링 (Robot Status)</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li><b>실시간 연결 상태</b>: 모든 Pickee/Packee 로봇의 온라인/오프라인/IDLE 상태를 Heartbeat 기반으로 실시간 감시.</li>
+        <li><b>상태/위치 정보</b>: 배터리 잔량, 현재 위치(Navigation 좌표), 장바구니 결합 여부 등을 한눈에 파악.</li>
+        <li><b>작업 추적</b>: 각 로봇에 할당된 주문 ID(Order ID)와 마지막 통신 시간을 추적하여 시스템 프리징이나 이탈을 즉시 감지.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/images/admin_dashboard_ros2.png" width="100%"><br>
+      <b>2. ROS2 서비스/토픽 심층 분석</b>
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/images/admin_dashboard_tcp.png" width="100%"><br>
+      <b>3. TCP/IP 데이터 패킷 디버깅</b>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <ul>
+        <li><b>서비스 호출 이력</b>: <code>get_location_pose</code>, <code>workflow</code> 등 핵심 로직의 Request/Response 및 수행 시간(Latency)을 기록.</li>
+        <li><b>실시간 디버깅</b>: 서비스 실패(Fail) 시 Error Message를 즉시 포착하여 로봇 원격 디버깅 지원.</li>
+      </ul>
+    </td>
+    <td valign="top">
+      <ul>
+        <li><b>JSON 패킷 모니터링</b>: App-Server-Robot 간 교환되는 <code>order_create</code> 등의 JSON 패킷을 로우 레벨에서 캡처.</li>
+        <li><b>데이터 무결성 검증</b>: 송수신 데이터의 스키마 정합성을 실시간으로 확인하여 통신 신뢰성 확보.</li>
+      </ul>
+    </td>
   </tr>
 </table>
 </div>

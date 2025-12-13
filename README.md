@@ -4,235 +4,235 @@
 
 <p align="center">
   <a href="https://docs.google.com/presentation/d/1-Q_TZLXfFrFoZFN47uKtgcyI_h5BXLpoyHWAMogy4Dw/edit?slide=id.p#slide=id.p">
-    <img src="https://img.shields.io/badge/PRESENTATION-GoogleSlides-yellow?style=for-the-badge&logo=google-slides&logoColor=white" alt="발표자료">
+    <img src="https://img.shields.io/badge/PRESENTATION-GoogleSlides-yellow?style=for-the-badge&logo=google-slides&logoColor=white" alt="Presentation">
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge" alt="License">
   </a>
 </p>
 
-# 📚 목차
-- [1. 팀 소개](#1-팀-소개)
-- [2. 프로젝트 개요](#2-프로젝트-개요)
-- [3. 주요 기능](#3-주요-기능)
-- [4. 핵심 기술](#4-핵심-기술)
-- [5. 기술적 문제 및 해결](#5-기술적-문제-및-해결)
-- [6. 시스템 설계 및 문서](#6-시스템-설계-및-문서)
-- [7. 프로젝트 구조](#7-프로젝트-구조)
-- [8. 기술 스택](#8-기술-스택)
-- [9. 실행·개발 가이드](#9-실행·개발-가이드)
-- [10. 프로젝트 관리](#10-프로젝트-관리)
-- [11. 라이선스](#11-라이선스)
+# 📚 Table of Contents
+- [1. Team Introduction](#1-team-introduction)
+- [2. Project Overview](#2-project-overview)
+- [3. Key Features](#3-key-features)
+- [4. Core Technology](#4-core-technology)
+- [5. Technical Challenges & Solutions](#5-technical-challenges--solutions)
+- [6. System Design & Documentation](#6-system-design--documentation)
+- [7. Project Structure](#7-project-structure)
+- [8. Tech Stack](#8-tech-stack)
+- [9. Execution & Development Guide](#9-execution--development-guide)
+- [10. Project Management](#10-project-management)
+- [11. License](#11-license)
 
 ---
 
-# 1. 팀 소개
+# 1. Team Introduction
 <div align="center">
   <table>
     <tr>
-      <th width="15%">팀 (Team)</th>
-      <th width="15%">이름 (Name)</th>
-      <th width="70%">담당 역할 (Role & Responsibility)</th>
+      <th width="15%">Team</th>
+      <th width="15%">Name</th>
+      <th width="70%">Role & Responsibility</th>
     </tr>
     <tr>
       <td align="center"><b>Main</b></td>
-      <td align="center">장진혁</td>
-      <td>시스템 설계 및 통신, 메인 서버 구축</td>
+      <td align="center">Jang Jinhyuk</td>
+      <td>System Design & Communication, Main Server Implementation</td>
     </tr>
     <tr>
       <td align="center"><b>App</b></td>
-      <td align="center">김윤재</td>
-      <td>GUI, QT</td>
+      <td align="center">Kim Yoonjae</td>
+      <td>GUI, QT/PySide6</td>
     </tr>
     <tr>
       <td align="center"><b>LLM</b></td>
-      <td align="center">김재형</td>
+      <td align="center">Kim Jaehyung</td>
       <td>STT, TTS, LLM, VLA</td>
     </tr>
     <tr>
-      <td align="center" rowspan="4"><b>Pickee</b><br>(주행 + 상품선택)</td>
-      <td align="center">최원호</td>
-      <td>SLAM, Nav2, 직원 학습, 직원 추종</td>
+      <td align="center" rowspan="4"><b>Pickee</b><br>(Mobile + Picking)</td>
+      <td align="center">Choi Wonho</td>
+      <td>SLAM, Nav2, Staff Training, Person Following</td>
     </tr>
     <tr>
-      <td align="center">임어진</td>
-      <td>ArUco 탐지, 정밀 주차, PD 제어</td>
+      <td align="center">Lim Eojin</td>
+      <td>ArUco Detection, Precision Parking, PD Control</td>
     </tr>
     <tr>
-      <td align="center">이승한</td>
-      <td>YOLO, CNN, 데이터 라벨링, IBVS 제어, PID 제어</td>
+      <td align="center">Lee Seunghan</td>
+      <td>YOLO, CNN, Data Labeling, IBVS Control, PID Control</td>
     </tr>
     <tr>
-      <td align="center">류혜진</td>
-      <td>Arm 제어, CNN, 데이터 라벨링, IBVS 제어, PID 제어</td>
+      <td align="center">Ryu Hyejin</td>
+      <td>Arm Control, CNN, Data Labeling, IBVS Control, PID Control</td>
     </tr>
     <tr>
-      <td align="center" rowspan="3"><b>Packee</b><br>(상품적재)</td>
-      <td align="center">송원준</td>
-      <td>C++ ROS2, 듀얼 로봇팔 제어, CNN 모델 제작/학습, IBVS 제어</td>
+      <td align="center" rowspan="3"><b>Packee</b><br>(Packing)</td>
+      <td align="center">Song Wonjun</td>
+      <td>C++ ROS2, Dual Arm Control, CNN Model Creation/Training, IBVS</td>
     </tr>
     <tr>
-      <td align="center">이한수</td>
-      <td>객체인식, BPP, MoveIt, MTC</td>
+      <td align="center">Lee Hansu</td>
+      <td>Object Detection, BPP (Bin Packing Problem), MoveIt, MTC</td>
     </tr>
     <tr>
-      <td align="center">박대준</td>
-      <td>데이터셋 구성 & Arm</td>
+      <td align="center">Park Daejun</td>
+      <td>Dataset Construction & Arm Management</td>
     </tr>
   </table>
 </div>
 
 ---
 
-# 2. 프로젝트 개요
+# 2. Project Overview
 
 <div align="center">
   <table>
     <tr>
       <td align="center">
         <img src="assets/Chap1/1%20원격%20로봇%20쇼핑%20%26%20오토%20피킹.jpg" width="260"><br>
-        <sub>원격 로봇 쇼핑 & 오토 피킹</sub>
+        <sub>Remote Robot Shopping & Auto Picking</sub>
       </td>
       <td align="center">
         <img src="assets/Chap1/2%20무인%20자동%20포장%20서비스.jpg" width="260"><br>
-        <sub>무인 자동 포장 서비스</sub>
+        <sub>Unmanned Automated Packing Service</sub>
       </td>
       <td align="center">
         <img src="assets/Chap1/3%20AI%20파트너%20%26%20스마트%20직원%20보조.jpg" width="260"><br>
-        <sub>AI 파트너 & 스마트 직원 보조</sub>
+        <sub>AI Partner & Smart Staff Assistant</sub>
       </td>
       <td align="center">
         <img src="assets/Chap1/4%20실시간%20통합%20관제%20시스템.jpg" width="260"><br>
-        <sub>실시간 통합 관제 시스템</sub>
+        <sub>Real-time Integrated Control System</sub>
       </td>
     </tr>
   </table>
 </div>
 
-- **프로젝트 목적**
-  - 매장 내 쇼핑 과정을 앱과 로봇으로 원격화·자동화하여 고객에게는 실시간 선택·모니터링 경험을 제공하고, 운영 측면에서는 피킹·포장 업무를 효율화
-- **프로젝트 기간**
-  - 2025.09.10 ~ 2025.11.18 (10주, Sprint1~10)
+- **Project Purpose**
+  - Automate and remotely control the in-store shopping process using apps and robots. This provides customers with a real-time selection and monitoring experience, while streamlining picking and packing operations for store management.
+- **Project Duration**
+  - 2025.09.10 ~ 2025.11.18 (10 Weeks, Sprint 1~10)
 
 ---
 
-# 3. 주요 기능
+# 3. Key Features
 
-## 3-1. 원격 쇼핑 & 피킹
+## 3-1. Remote Shopping & Picking
 
 <p align="center">
   <img src="assets/video/pickee.gif" width="20%">
   <br>
-  <sub>원격 쇼핑 및 피킹 시연</sub>
+  <sub>Remote Shopping & Picking Demo</sub>
 </p>
 
 <div align="center">
 <table>
   <tr>
-    <th style="width:18%">주요 단계</th>
-    <th style="width:60%">설명</th>
+    <th style="width:18%">Key Steps</th>
+    <th style="width:60%">Description</th>
   </tr>
   <tr>
-    <td valign="top">상품 선택</td>
-    <td valign="top">고객이 Shopee App/영상으로 상품을 선택하고 주문을 전송합니다.</td>
+    <td valign="top">Item Selection</td>
+    <td valign="top">The customer selects items and places an order via the Shopee App/Video stream.</td>
   </tr>
   <tr>
-    <td valign="top">매대 이동</td>
-    <td valign="top">Pickee가 Nav2로 매대로 이동하고 장애물을 회피합니다.</td>
+    <td valign="top">Moving to Shelf</td>
+    <td valign="top">Pickee moves to the shelf using Nav2, avoiding obstacles along the way.</td>
   </tr>
   <tr>
-    <td valign="top">상품 담기</td>
-    <td valign="top">비전/팔 제어로 상품을 집어 장바구니에 담고 완료를 보고합니다.</td>
+    <td valign="top">Picking Item</td>
+    <td valign="top">Using vision/arm control, Pickee grabs the item, places it in the basket, and reports completion.</td>
   </tr>
 </table>
 </div>
 
 
-## 3-2. 포장 시나리오
+## 3-2. Packing Scenario
 
 <p align="center">
   <img src="assets/video/packee_packaging.gif" width="40%">
   <br>
-  <sub>자동 포장 시연</sub>
+  <sub>Automated Packing Demo</sub>
 </p>
 
 <div align="center">
 <table>
   <tr>
-    <th style="width:18%">주요 단계</th>
-    <th style="width:60%">설명</th>
+    <th style="width:18%">Key Steps</th>
+    <th style="width:60%">Description</th>
   </tr>
   <tr>
-    <td valign="top">포장대 이동</td>
-    <td valign="top">Pickee가 포장대로 이동해 Packee와 장바구니를 교체합니다.</td>
+    <td valign="top">Moving to Packing Station</td>
+    <td valign="top">Pickee moves to the packing station and exchanges the basket with Packee.</td>
   </tr>
   <tr>
-    <td valign="top">장바구니 교체</td>
-    <td valign="top">장바구니 상태를 확인하고 Packee에게 포장 준비 완료를 전달합니다.</td>
+    <td valign="top">Basket Exchange</td>
+    <td valign="top">After verifying the basket status, Pickee signals Packee that it is ready for packing.</td>
   </tr>
   <tr>
-    <td valign="top">듀얼암 포장</td>
-    <td valign="top">Packee 듀얼암이 포장 시퀀스를 수행하고 결과를 보고합니다.</td>
+    <td valign="top">Dual-Arm Packing</td>
+    <td valign="top">Packee performs the packing sequence using its dual arms and reports the result.</td>
   </tr>
 </table>
 </div>
 
 
-## 3-3. 관리자 모니터링
+## 3-3. Admin Monitoring
 
 <p align="center">
   <img src="assets/video/monitor.gif" width="60%">
   <br>
-  <sub>실시간 모니터링 시연</sub>
+  <sub>Real-time Monitoring Demo</sub>
 </p>
 
 <div align="center">
 <table>
   <tr>
-    <th style="width:18%">주요 기능</th>
-    <th style="width:60%">설명</th>
+    <th style="width:18%">Key Features</th>
+    <th style="width:60%">Description</th>
   </tr>
   <tr>
-    <td valign="top">대시보드</td>
-    <td valign="top">현재 작업 수·로봇 수, 2D 맵 위치를 실시간 표시합니다.</td>
+    <td valign="top">Dashboard</td>
+    <td valign="top">Displays current tasks, number of robots, and 2D map locations in real-time.</td>
   </tr>
   <tr>
-    <td valign="top">로봇 상태</td>
-    <td valign="top">위치·배터리·진행율·현재 작업을 조회합니다.</td>    
+    <td valign="top">Robot Status</td>
+    <td valign="top">View details like location, battery level, progress rate, and current task.</td>    
   </tr>
   <tr>
-    <td valign="top">재고/작업 이력</td>
-    <td valign="top">재고 관리, 작업 히스토리 조회를 지원합니다.</td>
+    <td valign="top">Inventory/Task History</td>
+    <td valign="top">Supports inventory management and viewing of past task history.</td>
   </tr>
 </table>
 </div>
 
-## 3-4. 직원 보조(야간/재고 보충)
+## 3-4. Staff Assistance (Night/Restocking)
 
 <p align="center">
   <img src="assets/video/following.gif" height="300">
   <img src="assets/images/follow.png" height="300">
   <br>
-  <sub>직원 추종 및 보조 시연</sub>
+  <sub>Staff Following & Assistance Demo</sub>
 </p>
 
 <div align="center">
 <table>
   <tr>
-    <th style="width:18%">주요 기능</th>
-    <th style="width:60%">설명</th>
+    <th style="width:18%">Key Features</th>
+    <th style="width:60%">Description</th>
   </tr>
   <tr>
-    <td valign="top">모드 시작</td>
-    <td valign="top">야간 모드 시작 및 보조 기능 활성화.</td>
+    <td valign="top">Mode Start</td>
+    <td valign="top">Activates night mode and assistant functions.</td>
   </tr>
   <tr>
     <td valign="top">Following</td>
-    <td valign="top">음성 명령을 LLM이 해석해 follow 모드 전환, 직원 추종.</td>
+    <td valign="top">LLM interprets voice commands to switch to follow mode and track the staff member.</td>
   </tr>
   <tr>
-    <td valign="top">음성 주행</td>
-    <td valign="top">장소 명령을 추출해 주행 토픽 발행, Nav2로 지정 위치 이동.</td>
+    <td valign="top">Voice Navigation</td>
+    <td valign="top">Extracts location commands to publish navigation topics, moving the robot to the specified location via Nav2.</td>
   </tr>
 </table>
 </div>
@@ -240,49 +240,49 @@
 
 ---
 
-# 4. 핵심 기술
+# 4. Core Technology
 
-## 4-1. 자율주행 & 정밀주차 (Pickee Mobile)
+## 4-1. Autonomous Driving & Precision Parking (Pickee Mobile)
 
 <div align="center">
   <table>
     <tr>
       <td align="center">
         <img src="assets/images/정밀주차_순서도_3.png" height="300"><br>
-        <sub>정밀 주차 로직</sub>
+        <sub>Precision Parking Logic</sub>
       </td>
       <td align="center">
         <img src="assets/images/aruco_after.png" height="300"><br>
-        <sub>ArUco 인식 전처리 (Grayscale)</sub>
+        <sub>ArUco Preprocessing (Grayscale)</sub>
       </td>
     </tr>
   </table>
 </div>
 
-- **Nav2 기반 자율 주행**: 목적지까지의 경로 생성 및 장애물 회피 주행. `vel_modifier` 노드를 통해 Nav2의 `/cmd_vel`을 구독, 상황(장애물, 정밀 진입)에 따라 속도를 동적으로 제어하여 안전성 확보.
-- **ArUco 마커 정밀 주차**: Nav2 도착 후, 매대에 부착된 ArUco 마커를 인식하여 정밀 위치 보정.
-    - **이미지 전처리**: RGB 인식 실패 시, Grayscale 변환 및 이진화를 통해 인식률 향상.
-    - **RTR 주행**: Rotate-Translate-Rotate 패턴으로 정밀하게 마커 정렬 수행, 오차 최소화.
+- **Nav2-based Autonomous Driving**: Path planning and obstacle avoidance to the destination. Safety is ensured by dynamically controlling speed based on situations (obstacles, precision approach) via the `vel_modifier` node subscribing to Nav2's `/cmd_vel`.
+- **ArUco Marker Precision Parking**: After arriving via Nav2, the robot recognizes ArUco markers attached to the shelf for precise position correction.
+    - **Image Preprocessing**: Fallback to Grayscale conversion and binarization if RGB recognition fails, improving recognition rates.
+    - **RTR Maneuver**: Performs a Rotate-Translate-Rotate pattern to align precisely with the marker, minimizing errors.
 
-## 4-2. 로봇팔 제어 & 보정 (Robot Arm)
+## 4-2. Robot Arm Control & Calibration (Robot Arm)
 
 <div align="center">
   <table>
     <tr>
       <td align="center">
         <img src="assets/images/vision2.png" height="200"><br>
-        <sub>Two-Stream Network Pose 추정</sub>
+        <sub>Two-Stream Network Pose Estimation</sub>
       </td>
       <td align="center">
         <img src="assets/images/arm5.png" height="200"><br>
-        <sub>좌표 보정 및 PD 제어</sub>
+        <sub>Coordinate Calibration & PD Control</sub>
       </td>
     </tr>
   </table>
 </div>
 
-- **Visual Servoing**: Two-Stream Network를 활용하여 목표 이미지(Target)와 실시간 이미지(Current)의 차이를 최소화하는 방식으로 제어.
-- **좌표 보정 및 PD 제어**: 로봇팔이 장착된 카트의 위치가 가변적이므로, 학습된 모델의 목표 좌표와 실제 좌표 간 오차(Error)를 실시간 계산하여 보정. Gaussian 기반 속도 프로파일 적용으로 진동 최소화.
+- **Visual Servoing**: Control method utilizing a Two-Stream Network to minimize the difference between the target image and the current real-time image.
+- **Coordinate Calibration & PD Control**: Since the mobile robot (Cart) stops at slightly variable positions, the error between the trained model's target coordinates and the actual coordinates is calculated and compensated in real-time. Gaussian-based velocity profiles are applied to minimize vibration.
 
 ## 4-3. AI & LLM (Vision/Voice)
 
@@ -291,96 +291,96 @@
     <tr>
       <td align="center">
         <img src="assets/images/yolo.png" height="200"><br>
-        <sub>YOLOv11 기반 상품 인식</sub>
+        <sub>YOLOv11-based Item Recognition</sub>
       </td>
       <td align="center">
         <img src="assets/images/CNN.png" height="200"><br>
-        <sub>PoseCNN 6D Pose 추정</sub>
+        <sub>PoseCNN 6D Pose Estimation</sub>
       </td>
     </tr>
   </table>
 </div>
 
-- **객체 인식 (Vision)**: YOLOv11 모델을 사용하여 18종의 상품 및 장애물 정밀 탐지. PoseCNN으로 객체의 6D Pose(위치+자세)를 추정하여 로봇팔 파지 좌표 생성.
-- **음성 인식 및 안내 (LLM)**: Whisper STT로 노이즈 환경에서도 정확한 발화 인식. Qwen 모델을 QLoRA로 SFT(Fine-tuning)하여, "과자 코너로 가줘"와 같은 불명확한 명령에서도 정확한 장소/의도를 추출, 할루시네이션 방지.
+- **Object Detection (Vision)**: Uses YOLOv11 model for precise detection of 18 types of items and obstacles. PoseCNN estimates the object's 6D Pose (position + orientation) to generate gripping coordinates for the robot arm.
+- **Voice Recognition & Interaction (LLM)**: Whisper STT for accurate speech recognition even in noisy environments. Qwen model fine-tuned (SFT) with QLoRA to extract accurate locations/intents even from vague commands like "Go to the snack corner," preventing hallucinations.
 
 
 
 ---
 
-# 5. 기술적 문제 및 해결
+# 5. Technical Challenges & Solutions
 
-## 5-1. 아루코 마커 인식 불안정 (정밀 주차)
+## 5-1. Unstable ArUco Marker Recognition (Precision Parking)
 
 <div align="center">
   <table>
     <tr>
       <td align="center">
         <img src="assets/images/aruco_before.png" width="300"><br>
-        <sub>RGB 원본 (인식 실패)</sub>
+        <sub>RGB Original (Failed)</sub>
       </td>
       <td align="center">
         <img src="assets/images/aruco_after.png" width="300"><br>
-        <sub>Grayscale+이진화 (인식 성공)</sub>
+        <sub>Grayscale + Binarization (Success)</sub>
       </td>
     </tr>
   </table>
 </div>
 
-- **문제**: 조명이나 각도에 따라 RGB 카메라가 마커를 인식하지 못하여 정밀 주차에 실패하는 현상 발생.
-- **해결**: 인식 실패 시 **Grayscale 변환 및 이진화 전처리**를 수행하는 폴백(Fallback) 로직 추가. 대비(Contrast)를 높여 마커 인식률을 대폭 향상.
+- **Problem**: RGB camera failed to recognize markers depending on lighting or angle, causing precision parking failures.
+- **Solution**: Added a fallback logic performing **Grayscale conversion and Binarization preprocessing** upon recognition failure. This significantly improved marker recognition by increasing contrast.
 
-## 5-2. 로봇팔 피킹 오차 및 떨림
+## 5-2. Robot Arm Picking Error & Jittering
 
 <div align="center">
   <table>
     <tr>
       <td align="center">
         <img src="assets/images/arm3.png" width="300"><br>
-        <sub>이동형 로봇의 위치 오차 발생</sub>
+        <sub>Position Error of Mobile Robot</sub>
       </td>
       <td align="center">
         <img src="assets/images/arm4.png" width="300"><br>
-        <sub>좌표 차이 계산 및 보정</sub>
+        <sub>Coordinate Difference Calculation & Correction</sub>
       </td>
     </tr>
   </table>
 </div>
 
-- **문제**: 로봇(Cart)이 매번 미세하게 다른 위치에 정차하기 때문에, 고정된 학습 좌표를 사용할 경우 피킹 위치가 어긋나는 문제. 팔 끝의 미세한 떨림(Jittering) 발생.
-- **해결**:
-    1. **실시간 보정**: (현재 로봇 좌표 - 학습된 로봇 좌표) 차이를 계산하여 목표 좌표를 동적으로 수정.
-    2. **PD 제어**: Gaussian 기반 가속도 프로파일을 적용하여 부드러운 감속을 유도, 떨림 최소화.
+- **Problem**: Since the robot (Cart) stops at slightly different positions each time, using fixed training coordinates caused picking misalignment. Fine jittering occurred at the arm's end.
+- **Solution**:
+    1. **Real-time Calibration**: Dynamically corrected target coordinates by calculating the difference (Current Robot Coord - Trained Robot Coord).
+    2. **PD Control**: Applied Gaussian-based acceleration profiles to induce smooth deceleration, minimizing jitter.
 
-## 5-3. LLM 할루시네이션 (음성 주행)
+## 5-3. LLM Hallucination (Voice Navigation)
 
-- **문제**: Base LLM 모델이 "과자 코너"와 같은 모호한 장소 명령을 처리할 때, 존재하지 않는 좌표나 엉뚱한 장소를 반환하는 할루시네이션 발생.
-- **해결**: 장소 이동과 관련된 특화 데이터셋 **527건**을 구축하고 **QLoRA SFT (Fine-tuning)** 진행.
+- **Problem**: Base LLM models hallucinated when processing vague location commands like "snack corner," returning non-existent coordinates or irrelevant places.
+- **Solution**: Constructed a specialized dataset of **527 entries** related to location movement and performed **QLoRA SFT (Fine-tuning)**.
 
-| 구분 | 사용자 발화 | LLM 응답 (Action) | 결과 |
+| Category | User Utterance | LLM Response (Action) | Result |
 | :---: | :--- | :--- | :---: |
-| **Before** | "과자로 가줘" | "네, 과자를 드시러 가시나요?" (잡담) | ❌ 실패 |
-| **After** | "과자로 가줘" | `{"action": "move", "target": "snack_corner"}` | ✅ 성공 |
+| **Before** | "Go to snacks" | "Okay, are you going to eat snacks?" (Chit-chat) | ❌ Fail |
+| **After** | "Go to snacks" | `{"action": "move", "target": "snack_corner"}` | ✅ Success |
 
-## 5-4. 주행 중 동적 속도 제어 한계
+## 5-4. Limitations of Dynamic Speed Control
 
-- **문제**: Nav2의 기본 설정만으로는 사람이나 장애물 발견 시 즉각적이고 자연스러운 감속/정지가 어려움.
-- **해결**: `/cmd_vel` 토픽을 중간에서 가로채는 **`vel_modifier` 노드** 개발. 장애물 거리나 정밀 주차 단계에 따라 속도를 선형적으로 감속하거나 강제 정지시키는 로직 주입.
+- **Problem**: Nav2's default settings made it difficult to decelerate or stop immediately and naturally when detecting people or obstacles.
+- **Solution**: Developed a **`vel_modifier` node** that intercepts the `/cmd_vel` topic. Injected logic to linearly decelerate or forcibly stop the robot based on obstacle distance or precision parking stage.
 
-## 5-5. 직원 인식 및 추종 (Person Tracking)
+## 5-5. Staff Recognition & Following (Person Tracking)
 
 <p align="center">
   <img src="assets/images/직원복탐지.png" width="80%">
   <br>
-  <sub>Shopee 유니폼 YOLO 학습 데이터 및 인식 결과</sub>
+  <sub>Shopee Uniform YOLO Training Data & Detection Result</sub>
 </p>
 
-- **문제**: 일반적인 Person Detection 모델 사용 시, 고객과 직원을 구분하지 못해 로봇이 고객을 따라가는 오작동 발생.
-- **해결**: Shopee 로고가 부착된 **직원 유니폼** 자체 데이터셋을 구축하여 YOLO 추가 학습(Fine-tuning). 직원(Staff)만 특정하여 인식하고 추종하도록 개선.
+- **Problem**: Generic Person Detection models could not distinguish between customers and staff, causing the robot to follow customers incorrectly.
+- **Solution**: Constructed a custom dataset for **Staff Uniforms** with the Shopee logo and fine-tuned YOLO. Improved to detect and follow only specific Staff members.
 
 ---
 
-# 6. 시스템 설계 및 문서
+# 6. System Design & Documentation
 
 ## 6-1. SW Architecture
 <div align="center">
@@ -398,13 +398,13 @@
     <tr>
       <td align="center">
         <img src="assets/images/서비스흐름_영업중.png" width="80%"><br>
-        <sub>주간 (영업 중)</sub>
+        <sub>Daytime (During Business Hours)</sub>
       </td>
     </tr>
     <tr>
       <td align="center">
         <img src="assets/images/서비스흐름_영업후.png" width="80%"><br>
-        <sub>야간 (영업 종료 후)</sub>
+        <sub>Nighttime (After Business Hours)</sub>
       </td>
     </tr>
   </table>
@@ -418,146 +418,146 @@
 
 ## 6-5. Sequence Diagram
 <details>
-<summary> SC01: 상품 주문</summary>
-SC-01-01: 로그인
+<summary> SC01: Item Order</summary>
+SC-01-01: Login
 
-![로그인](assets/images/SC-01-01.png)
+![Login](assets/images/SC-01-01.png)
 
-SC-01-02: 상품 검색
+SC-01-02: Item Search
 
-![상품 검색](assets/images/SC-01-02.png)
+![Item Search](assets/images/SC-01-02.png)
 
-SC-01-03: 결제
+SC-01-03: Payment
 
-![결제](assets/images/SC-01-03.png)
-
-</details>
-<details>
-<summary> SC02: 쇼핑</summary>
-SC-02-01: 매대 이동
-
-![매대 이동](assets/images/SC-02-01.png)
-
-SC-02-02: 장애물 회피
-
-![장애물회피1](assets/images/SC-02-02_1.png)
-
-![장애물회피2](assets/images/SC-02-02_2.png)
-
-SC-02-03: 매대 상품 선택
-
-![매대 상품 선택1](assets/images/SC-02-03_1.png)
-
-![매대 상품 선택2](assets/images/SC-02-03_2.png)
-
-SC-02-04: 상품 장바구니 담기
-
-![상품 장바구니 담기](assets/images/SC-02-04.png)
-
-SC-02-05: 쇼핑 종료
-
-![쇼핑 종료](assets/images/SC-02-05.png)
+![Payment](assets/images/SC-01-03.png)
 
 </details>
 <details>
-<summary> SC03: 상품 포장</summary>
-SC-03-01: 포장대 이동
+<summary> SC02: Shopping</summary>
+SC-02-01: Moving to Shelf
 
-![포장대 이동](assets/images/SC-03-01.png)
+![Moving to Shelf](assets/images/SC-02-01.png)
 
-SC-03-02: 장바구니 교체
+SC-02-02: Obstacle Avoidance
 
-![장바구니 교체](assets/images/SC-03-02.png)
+![Obstacle Avoidance 1](assets/images/SC-02-02_1.png)
 
-SC-03-03: Packee 작업 가능 확인
+![Obstacle Avoidance 2](assets/images/SC-02-02_2.png)
 
-![작업 가능 확인](assets/images/SC-03-03.png)
+SC-02-03: Shelf Item Selection
 
-SC-03-04: 상품 포장
+![Shelf Item Selection 1](assets/images/SC-02-03_1.png)
 
-![상품 포장](assets/images/SC-03-04.png)
+![Shelf Item Selection 2](assets/images/SC-02-03_2.png)
 
-</details>
-<details>
-<summary> SC04: 복귀 및 충전</summary>
+SC-02-04: Adding Item to Basket
 
-![복귀 및 충전](assets/images/SC-04.png)
+![Adding to Basket](assets/images/SC-02-04.png)
 
-</details>
-<details>
-<summary> SC05: 관리자 기능</summary>
-SC-05-01: 관리자 모니터링
+SC-02-05: Shopping Check-out
 
-로봇 정보 표시
-
-![관리자 모니터링1](assets/images/SC-05-01_1로봇정보표시.png)
-
-로봇 위치 표시
-
-![관리자 모니터링2](assets/images/SC-05-01_2로봇위치표시.png)
-
-로봇 시야 확인
-
-![관리자 모니터링3](assets/images/SC-05-01_3로봇시야확인.png)
-
-로봇 시야 송출 종료
-
-![관리자 모니터링4](assets/images/SC-05-01_4로봇시야송출종료.png)
-
-로봇 상태 조회
-
-![관리자 모니터링5](assets/images/SC-05-01_5로봇상태조회.png)
-
-진행율 확인
-
-![관리자 모니터링6](assets/images/SC-05-01_6진행율확인.png)
-
-SC-05-02: 관리자 재고 관리
-
-재고 정보 조회
-
-![관리자 재고 관리1](assets/images/SC-05-02_1재고정보조회.png)
-
-재고 정보 수정
-
-![관리자 재고 관리2](assets/images/SC-05-02_2재고정보수정.png)
-
-재고 정보 추가
-
-![관리자 재고 관리3](assets/images/SC-05-02_3재고정보추가.png)
-
-재고 정보 삭제
-
-![관리자 재고 관리4](assets/images/SC-05-02_4재고정보삭제.png)
-
-SC-05-03: 관리자 작업 이력 조회
-
-![관리자 작업 이력 조회](assets/images/SC-05-03.png)
+![Shopping End](assets/images/SC-02-05.png)
 
 </details>
 <details>
-<summary> SC06: 직원 보조 기능</summary>
-SC-06-01: 모드 시작
+<summary> SC03: Item Packaging</summary>
+SC-03-01: Moving to Packing Station
 
-![모드 시작](assets/images/SC-06-01.png)
+![Moving to Packing Station](assets/images/SC-03-01.png)
 
-SC-06-02: 인식 및 추종
+SC-03-02: Basket Exchange
 
-![인식 및 추종1](assets/images/SC-06-02_1.png)
+![Basket Exchange](assets/images/SC-03-02.png)
 
-![인식 및 추종1](assets/images/SC-06-02_2.png)
+SC-03-03: Packee Readiness Check
 
-SC-06-03: 음성 명령
+![Readiness Check](assets/images/SC-03-03.png)
 
-![음성 명령](assets/images/SC-06-03.png)
+SC-03-04: Item Packing
 
-SC-06-04: 목적지 이동
+![Item Packing](assets/images/SC-03-04.png)
 
-![목적지 이동](assets/images/SC-06-04.png)
+</details>
+<details>
+<summary> SC04: Return & Charge</summary>
 
-SC-06-05: 임무 완료 확인
+![Return & Charge](assets/images/SC-04.png)
 
-![임무 완료 확인](assets/images/SC-06-05.png)
+</details>
+<details>
+<summary> SC05: Admin Functions</summary>
+SC-05-01: Admin Monitoring
+
+Robot Info Display
+
+![Admin Monitoring 1](assets/images/SC-05-01_1로봇정보표시.png)
+
+Robot Location Display
+
+![Admin Monitoring 2](assets/images/SC-05-01_2로봇위치표시.png)
+
+Robot View Check
+
+![Admin Monitoring 3](assets/images/SC-05-01_3로봇시야확인.png)
+
+Robot View Termination
+
+![Admin Monitoring 4](assets/images/SC-05-01_4로봇시야송출종료.png)
+
+Robot Status Inquiry
+
+![Admin Monitoring 5](assets/images/SC-05-01_5로봇상태조회.png)
+
+Progress Check
+
+![Admin Monitoring 6](assets/images/SC-05-01_6진행율확인.png)
+
+SC-05-02: Admin Inventory Management
+
+Inventory Info Inquiry
+
+![Inventory Info 1](assets/images/SC-05-02_1재고정보조회.png)
+
+Inventory Info Modification
+
+![Inventory Info 2](assets/images/SC-05-02_2재고정보수정.png)
+
+Inventory Info Addition
+
+![Inventory Info 3](assets/images/SC-05-02_3재고정보추가.png)
+
+Inventory Info Deletion
+
+![Inventory Info 4](assets/images/SC-05-02_4재고정보삭제.png)
+
+SC-05-03: Admin Task History Inquiry
+
+![Admin Task History](assets/images/SC-05-03.png)
+
+</details>
+<details>
+<summary> SC06: Staff Assistant Functions</summary>
+SC-06-01: Mode Start
+
+![Mode Start](assets/images/SC-06-01.png)
+
+SC-06-02: Recognition & Following
+
+![Recognition & Following 1](assets/images/SC-06-02_1.png)
+
+![Recognition & Following 2](assets/images/SC-06-02_2.png)
+
+SC-06-03: Voice Command
+
+![Voice Command](assets/images/SC-06-03.png)
+
+SC-06-04: Destination Movement
+
+![Destination Movement](assets/images/SC-06-04.png)
+
+SC-06-05: Mission Completion Check
+
+![Mission Completion](assets/images/SC-06-05.png)
 
 </details>
 
@@ -569,86 +569,87 @@ SC-06-05: 임무 완료 확인
 ## 6-7. Interface Specification
 
 <details>
-<summary> TCP 통신</summary>
+<summary> TCP Communication</summary>
 
 | Function | From | To | Message Type | Schema |
 |---------|------|----|--------------|--------|
-| 사용자 로그인 요청 | App | Main Service | user_login | ```json { "type": "user_login", "data": { "user_id": "string", "password": "string" } }``` |
-(표 내용 생략 - 전체 내용은 InterfaceSpecification/App_vs_Main.md 등을 참고)
+| User Login Request | App | Main Service | user_login | ```json { "type": "user_login", "data": { "user_id": "string", "password": "string" } }``` |
+(Table content omitted - Refer to InterfaceSpecification/App_vs_Main.md for full details)
 
-*상세 내용은 [Interface Specification Document](docs/InterfaceSpecification)를 참고하세요.*
+*For details, refer to the [Interface Specification Document](docs/InterfaceSpecification).*
 </details>
 
 <details>
-<summary> UDP 통신</summary>
+<summary> UDP Communication</summary>
 
-#### 통신규약
-| 항목 | 내용 |
+#### Protocol
+| Item | Content |
 |------|------|
 | Port | 6000 |
 | Protocol | UDP |
-| Data Format | JSON (메타데이터) + Binary (이미지 데이터) |
+| Data Format | JSON (Metadata) + Binary (Image Data) |
 | Max Packet Size | 1,600 bytes |
 
-#### 패킷 구조
+#### Packet Structure
 [ JSON Header (≈200 bytes) ] + [ Binary Image Data (max 1,400 bytes) ]
 </details>
 
 <details>
-<summary> HTTP 통신 (LLM)</summary>
+<summary> HTTP Communication (LLM)</summary>
 
 | Function | Endpoint | Request | Response |
 |---|---|---|---|
-| 상품 검색 쿼리 | GET /llm/search_query | `{"text": "사과 찾아줘"}` | `{"sql_query": "name LIKE '%사과%'"}` |
-| 발화 의도 분석 | GET /llm/intent_detection | `{"text": "피키야 이리로 와"}` | `{"intent": "Move_place", ...}` |
+| Item Search Query | GET /llm/search_query | `{"text": "Find apples"}` | `{"sql_query": "name LIKE '%apples%'"}` |
+| Intent Detection | GET /llm/intent_detection | `{"text": "Pickee, come here"}` | `{"intent": "Move_place", ...}` |
 
 </details>
 
 <details>
-<summary> ROS2 통신</summary>
+<summary> ROS2 Communication</summary>
 
 ### Main <-> Pic Main
 | Function | Topic | Message Type | From | To |
 |---|---|---|---|---|
-| 이동 시작 알림 | /pickee/moving_status | PickeeMoveStatus | Pic Main | Main |
-| 도착 보고 | /pickee/arrival_notice | PickeeArrival | Pic Main | Main |
-| 로봇 상태 전송 | /pickee/robot_status | PickeeRobotStatus | Pic Main | Main |
-| 작업 시작 명령 | /pickee/workflow/start_task | PickeeWorkflowStartTask (Srv) | Main | Pic Main |
+| Move Start Notification | /pickee/moving_status | PickeeMoveStatus | Pic Main | Main |
+| Arrival Report | /pickee/arrival_notice | PickeeArrival | Pic Main | Main |
+| Robot Status | /pickee/robot_status | PickeeRobotStatus | Pic Main | Main |
+| Task Start Command | /pickee/workflow/start_task | PickeeWorkflowStartTask (Srv) | Main | Pic Main |
 
 ### Pic Main <-> Pic Vision
 | Function | Topic | Message Type |
 |---|---|---|
-| 매대 상품 인식 | /pickee/vision/detection_result | PickeeVisionDetection |
-| 장애물 감지 | /pickee/vision/obstacle_detected | PickeeVisionObstacles |
+| Shelf Item Detection | /pickee/vision/detection_result | PickeeVisionDetection |
+| Obstacle Detection | /pickee/vision/obstacle_detected | PickeeVisionObstacles |
 
 ### Pic Main <-> Pac Main
 | Function | Topic | Message Type |
 |---|---|---|
-| 포장 완료 알림 | /packee/packing_complete | PackeePackingComplete |
-| 작업 가능 확인 | /packee/packing/check_availability | PackeePackingCheckAvailability (Srv) |
+| Packing Complete | /packee/packing_complete | PackeePackingComplete |
+| Availability Check | /packee/packing/check_availability | PackeePackingCheckAvailability (Srv) |
 
 </details>
 
 ---
 
-# 7. 프로젝트 구조
+# 7. Project Structure
 ```
 Shopee/
-├── README.md                # Shopee 개요 (본 문서)
-├── README_legacy.md         # 이전 버전 백업
-├── README_roomie.md         # Roomie(호텔 로봇) 별도 프로젝트 문서
-├── shopee_ros2/             # ROS2 워크스페이스 (주행·팔·비전·Main·App·인터페이스)
-├── shopee_llm/              # LLM/STT 학습·서빙 리소스
-├── docs/                    # 요구사항/설계/인터페이스/다이어그램/코딩 표준
-├── assets/                  # 배너/이미지/GIF
-└── AGENTS.md                # 작업 지침
+├── README.md                # Shopee Overview (This Document - English)
+├── README_kr.md             # Korean Backup (Original)
+├── README_legacy.md         # Previous Version Backup
+├── README_roomie.md         # Roomie (Hotel Robot) Project Docs
+├── shopee_ros2/             # ROS2 Workspace (Navigation, Arm, Vision, Main, App, Interfaces)
+├── shopee_llm/              # LLM/STT Training & Serving Resources
+├── docs/                    # Requirements, Design, Interface, Diagrams, Coding Standards
+├── assets/                  # Banners, Images, GIFs
+└── AGENTS.md                # Agent Instructions
 ```
 
 ---
 
-# 8. 기술 스택
+# 8. Tech Stack
 
-| 분류 | 사용 기술 |
+| Category | Technology |
 |------|-----------|
 | **OS / Platform** | [![Ubuntu](https://img.shields.io/badge/Ubuntu%2022.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/) [![ROS2](https://img.shields.io/badge/ROS2%20Humble-22314E?style=for-the-badge&logo=ros&logoColor=white)](https://docs.ros.org/en/humble/) |
 | **Language** | [![Python](https://img.shields.io/badge/Python%203.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![C++](https://img.shields.io/badge/C++%2017-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/) |
@@ -659,22 +660,22 @@ Shopee/
 
 ---
 
-# 9. 실행·개발 가이드
-- ROS2 워크스페이스 빌드/실행/테스트는 `shopee_ros2/README.md` 참고
+# 9. Execution & Development Guide
+- For build/run/test instructions of the ROS2 workspace, refer to `shopee_ros2/README.md`.
   ```bash
   cd shopee_ros2
   rosdep install --from-paths src --ignore-src -r -y
   colcon build
   source install/setup.bash
   ```
-- 패키지별 상세 가이드는 `shopee_ros2/src/<패키지>/README.md`에서 확인
-- 코딩 표준: `docs/CodingStandard/standard.md` (ROS2/Python/C++ 네이밍·주석 규칙 준수)
+- Detailed guides for each package can be found in `shopee_ros2/src/<package>/README.md`.
+- Coding Standards: `docs/CodingStandard/standard.md` (Please follow ROS2/Python/C++ naming & commenting conventions).
 
 ---
 
-# 10. 프로젝트 관리
+# 10. Project Management
 
-## 1. 프로젝트 일정 관리 (Jira)
+## 1. Project Schedule Management (Jira)
 
 <table>
   <tr>
@@ -682,17 +683,17 @@ Shopee/
       <img src="assets/images/jira.png" width="500">
     </td>
     <td align="left" valign="top">
-      ▪ <b>총 10주 (2024.09.10 ~ 2024.11.18)</b><br>
-      ▪ <b>Sprint 1</b>: 주제 선정 / 기획 / 요구사항 정의<br>
-      ▪ <b>Sprint 2~4</b>: 설계 / 기술조사<br>
-      ▪ <b>Sprint 5</b>: 통신 구현<br>
-      ▪ <b>Sprint 6~9</b>: 기능 구현 및 연동 테스트<br>
-      ▪ <b>Sprint 10</b>: 발표 자료
+      ▪ <b>Total 10 Weeks (2024.09.10 ~ 2024.11.18)</b><br>
+      ▪ <b>Sprint 1</b>: Topic Selection / Planning / Requirements Definition<br>
+      ▪ <b>Sprint 2~4</b>: Design / Tech Research<br>
+      ▪ <b>Sprint 5</b>: Communication Implementation<br>
+      ▪ <b>Sprint 6~9</b>: Feature Implementation & Integration Testing<br>
+      ▪ <b>Sprint 10</b>: Presentation Materials
     </td>
   </tr>
 </table>
 
-## 2. 프로젝트 문서 관리 (Confluence)
+## 2. Project Document Management (Confluence)
 
 <table>
   <tr>
@@ -700,16 +701,16 @@ Shopee/
       <img src="assets/images/confluence.png" width="500">
     </td>
     <td align="left" valign="top">
-      ▪ <b>Confluence 문서 관리</b><br>
-      ▪ 기획서, 설계서, 회의록 등 프로젝트 산출물 통합 관리<br>
-      ▪ 팀원 간 기술 공유 및 트러블 슈팅 기록
+      ▪ <b>Confluence Document Management</b><br>
+      ▪ Integrated management of project deliverables such as planning docs, design docs, and meeting minutes<br>
+      ▪ Recording knowledge sharing and troubleshooting items among team members
     </td>
   </tr>
 </table>
 
 ---
 
-# 11. 라이선스
+# 11. License
 
-이 프로젝트는 [Apache License 2.0](LICENSE)에 따라 오픈소스로 제공됩니다.
-자세한 사항은 [`LICENSE`](LICENSE) 파일을 참고해주세요.
+This project is open-sourced under the [Apache License 2.0](LICENSE).
+For details, please refer to the [`LICENSE`](LICENSE) file.

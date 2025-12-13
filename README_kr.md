@@ -37,7 +37,7 @@
     <tr>
       <td align="center"><b>Main</b></td>
       <td align="center">장진혁</td>
-      <td>전체 시스템 및 통신 인터페이스 설계, Main Server (Backend) 구현, 관제 시스템 설계 및 구현</td>
+      <td><b>기술 총괄</b>, 전체 시스템 및 통신 인터페이스 설계, Main Server (Backend) 구현, 관제 시스템 설계 및 구현</td>
     </tr>
     <tr>
       <td align="center"><b>App</b></td>

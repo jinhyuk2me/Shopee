@@ -37,7 +37,7 @@
     <tr>
       <td align="center"><b>Main</b></td>
       <td align="center">Jang Jinhyuk</td>
-      <td>Entire System & Communication Interface Design, Main Server (Backend) Implementation, Control System Design & Implementation</td>
+      <td><b>Technical Lead</b>, Entire System & Communication Interface Design, Main Server (Backend) Implementation, Control System Design & Implementation</td>
     </tr>
     <tr>
       <td align="center"><b>App</b></td>

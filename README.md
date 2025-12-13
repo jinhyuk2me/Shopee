@@ -688,8 +688,6 @@ SC-06-05: Mission Completion Check
 Shopee/
 ├── README.md                # Shopee Overview (This Document - English)
 ├── README_kr.md             # Korean Backup (Original)
-├── README_legacy.md         # Previous Version Backup
-├── README_roomie.md         # Roomie (Hotel Robot) Project Docs
 ├── shopee_ros2/             # ROS2 Workspace (Navigation, Arm, Vision, Main, App, Interfaces)
 ├── shopee_llm/              # LLM/STT Training & Serving Resources
 ├── docs/                    # Requirements, Design, Interface, Diagrams, Coding Standards

@@ -685,9 +685,8 @@ SC-06-05: 임무 완료 확인
 # 7. 프로젝트 구조
 ```
 Shopee/
-├── README.md                # Shopee 개요 (본 문서)
-├── README_legacy.md         # 이전 버전 백업
-├── README_roomie.md         # Roomie(호텔 로봇) 별도 프로젝트 문서
+├── README.md                # Shopee 개요 (영문 Main)
+├── README_kr.md             # Shopee 개요 (국문 Backup)
 ├── shopee_ros2/             # ROS2 워크스페이스 (주행·팔·비전·Main·App·인터페이스)
 ├── shopee_llm/              # LLM/STT 학습·서빙 리소스
 ├── docs/                    # 요구사항/설계/인터페이스/다이어그램/코딩 표준

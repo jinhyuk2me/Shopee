@@ -670,20 +670,35 @@ Shopee/
 
 # 10. 프로젝트 관리
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="assets/images/confluence.png" width="100%"><br>
-        <sub>Confluence 문서 관리</sub>
-      </td>
-      <td align="center">
-        <img src="assets/images/jira.png" width="100%"><br>
-        <sub>Jira 일정 관리</sub>
-      </td>
-    </tr>
-  </table>
-</div>
+## 1. 프로젝트 일정 관리 (Jira)
 
-- **기간**: 2024.10.14 ~ 2024.12.18 (총 10주)
-- **일정**: 기획(1~2주) → 핵심 구현(3~6주) → 통합/고도화(7~9주) → 최종 발표(10주)
+<table>
+  <tr>
+    <td align="center" width="400" valign="top">
+      <img src="assets/images/jira.png" width="500">
+    </td>
+    <td align="left" valign="top">
+      ▪ <b>총 10주 (2024.09.10 ~ 2024.11.18)</b><br>
+      ▪ <b>Sprint 1</b>: 주제 선정 / 기획 / 요구사항 정의<br>
+      ▪ <b>Sprint 2~4</b>: 설계 / 기술조사<br>
+      ▪ <b>Sprint 5</b>: 통신 구현<br>
+      ▪ <b>Sprint 6~9</b>: 기능 구현 및 연동 테스트<br>
+      ▪ <b>Sprint 10</b>: 발표 자료
+    </td>
+  </tr>
+</table>
+
+## 2. 프로젝트 문서 관리 (Confluence)
+
+<table>
+  <tr>
+    <td align="center" width="400" valign="top">
+      <img src="assets/images/confluence.png" width="500">
+    </td>
+    <td align="left" valign="top">
+      ▪ <b>Confluence 문서 관리</b><br>
+      ▪ 기획서, 설계서, 회의록 등 프로젝트 산출물 통합 관리<br>
+      ▪ 팀원 간 기술 공유 및 트러블 슈팅 기록
+    </td>
+  </tr>
+</table>

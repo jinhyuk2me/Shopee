@@ -6,6 +6,9 @@
   <a href="https://docs.google.com/presentation/d/1-Q_TZLXfFrFoZFN47uKtgcyI_h5BXLpoyHWAMogy4Dw/edit?slide=id.p#slide=id.p">
     <img src="https://img.shields.io/badge/PRESENTATION-GoogleSlides-yellow?style=for-the-badge&logo=google-slides&logoColor=white" alt="발표자료">
   </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge" alt="License">
+  </a>
 </p>
 
 # 📚 목차
@@ -19,6 +22,7 @@
 - [8. 기술 스택](#8-기술-스택)
 - [9. 실행·개발 가이드](#9-실행·개발-가이드)
 - [10. 프로젝트 관리](#10-프로젝트-관리)
+- [11. 라이선스](#11-라이선스)
 
 ---
 
@@ -702,3 +706,10 @@ Shopee/
     </td>
   </tr>
 </table>
+
+---
+
+# 11. 라이선스
+
+이 프로젝트는 [Apache License 2.0](LICENSE)에 따라 오픈소스로 제공됩니다.
+자세한 사항은 [`LICENSE`](LICENSE) 파일을 참고해주세요.

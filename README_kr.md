@@ -208,7 +208,7 @@
 </div>
 
 ### 🖥️ 관제 시스템 주요 기능 예시 (Main Service Dashboard Examples)
-**Modular UI 기반 통합 관제 시스템** (Designed & Implemented by Jang Jinhyuk)
+**Modular UI 기반 통합 관제 시스템**
 *(본 대시보드는 로봇 상태, 주문 관리, ROS2/TCP 모니터링 등 다양한 기능을 탭 형태로 제공하며, 아래는 그 중 일부 핵심 기능의 예시입니다.)*
 
 <div align="center">

@@ -209,7 +209,7 @@
 </div>
 
 ### 🖥️ Admin Dashboard Feature Examples (Main Service Dashboard)
-**Modular UI-based Integrated Control System** (Designed & Implemented by Jang Jinhyuk)
+**Modular UI-based Integrated Control System**
 *(The dashboard provides various functions such as robot status, order management, and ROS2/TCP monitoring via tabs. Below are examples of some key features.)*
 
 <div align="center">

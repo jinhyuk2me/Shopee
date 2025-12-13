@@ -1,4 +1,6 @@
-![Banner](https://github.com/addinedu-roscamp-7th/roscamp-repo-1/blob/main/assets/images/banner.jpg?raw=true)
+<p align="center">
+  <img src="https://github.com/addinedu-roscamp-7th/roscamp-repo-1/blob/main/assets/images/banner.jpg?raw=true" alt="Banner">
+</p>
 
 <p align="center">
   <a href="https://docs.google.com/presentation/d/1-Q_TZLXfFrFoZFN47uKtgcyI_h5BXLpoyHWAMogy4Dw/edit?slide=id.p#slide=id.p">
@@ -9,9 +11,7 @@
   </a>
 </p>
 
-# Shopee 로봇 쇼핑 시스템
-
-원격 쇼핑·상품 피킹·포장을 통합 제공하는 ROS2 기반 쇼핑 로봇 플랫폼입니다. Shopee App(고객/관리자), Main Service(중앙 제어), Pickee(주행·피킹), Packee(포장), LLM 서비스가 연동되어 요구사항 전주기를 지원합니다.
+# 원격 쇼핑 로봇 플랫폼 Shopee
 
 ## 📚 목차
 - [1. 프로젝트 개요](#1-프로젝트-개요)
@@ -29,12 +29,33 @@
 
 # 1. 프로젝트 개요
 
-| 항목 | 내용 |
-| --- | --- |
-| 기간 | 2025.09.10 ~ 2025.11.18 (10주, Sprint1~10) |
-| 목표 | 쇼핑몰 내 원격 쇼핑 경험 제공: 상품 탐색 → 실시간 선택 → 자동 피킹 → 포장/배송 |
-| 구성 | Shopee App, Main Service, Pickee(주행·피킹), Packee(포장), LLM 서비스 |
-| 요구사항 요약 | 고객: 상품 탐색·선택·모니터링 / 직원: 포장·재고 보충 / 관리자: 주문·작업·로봇 관리 |
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="assets/Chap1/1%20원격%20로봇%20쇼핑%20%26%20오토%20피킹.jpg" width="260"><br>
+        <sub>원격 로봇 쇼핑 & 오토 피킹</sub>
+      </td>
+      <td align="center">
+        <img src="assets/Chap1/2%20무인%20자동%20포장%20서비스.jpg" width="260"><br>
+        <sub>무인 자동 포장 서비스</sub>
+      </td>
+      <td align="center">
+        <img src="assets/Chap1/3%20AI%20파트너%20%26%20스마트%20직원%20보조.jpg" width="260"><br>
+        <sub>AI 파트너 & 스마트 직원 보조</sub>
+      </td>
+      <td align="center">
+        <img src="assets/Chap1/4%20실시간%20통합%20관제%20시스템.jpg" width="260"><br>
+        <sub>실시간 통합 관제 시스템</sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+- **프로젝트 목적**
+  - 매장 내 쇼핑 과정을 앱과 로봇으로 원격화·자동화하여 고객에게는 실시간 선택·모니터링 경험을 제공하고, 운영 측면에서는 피킹·포장 업무를 효율화
+- **프로젝트 기간**
+  - 2025.09.10 ~ 2025.11.18 (10주, Sprint1~10)
 
 ---
 
@@ -42,103 +63,114 @@
 
 ## 2-1. 원격 쇼핑 & 피킹
 
+<p align="center">
+  <img src="assets/video/pickee.gif" width="20%">
+  <br>
+  <sub>원격 쇼핑 및 피킹 시연</sub>
+</p>
+
 <table>
   <tr>
     <th style="width:18%">주요 단계</th>
     <th style="width:60%">설명</th>
-    <th style="width:22%">이미지</th>
   </tr>
   <tr>
     <td valign="top">상품 선택</td>
     <td valign="top">고객이 Shopee App/영상으로 상품을 선택하고 주문을 전송합니다.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-02-03_1.png" width="220"></td>
   </tr>
   <tr>
     <td valign="top">매대 이동</td>
     <td valign="top">Pickee가 Nav2로 매대로 이동하고 장애물을 회피합니다.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-02-01.png" width="220"></td>
   </tr>
   <tr>
     <td valign="top">상품 담기</td>
     <td valign="top">비전/팔 제어로 상품을 집어 장바구니에 담고 완료를 보고합니다.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-02-04.png" width="220"></td>
   </tr>
 </table>
 
+
 ## 2-2. 포장 시나리오
+
+<p align="center">
+  <img src="assets/video/packee_packaging.gif" width="40%">
+  <br>
+  <sub>자동 포장 시연</sub>
+</p>
 
 <table>
   <tr>
     <th style="width:18%">주요 단계</th>
     <th style="width:60%">설명</th>
-    <th style="width:22%">이미지</th>
   </tr>
   <tr>
     <td valign="top">포장대 이동</td>
     <td valign="top">Pickee가 포장대로 이동해 Packee와 장바구니를 교체합니다.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-03-01.png" width="220"></td>
   </tr>
   <tr>
     <td valign="top">장바구니 교체</td>
     <td valign="top">장바구니 상태를 확인하고 Packee에게 포장 준비 완료를 전달합니다.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-03-02.png" width="220"></td>
   </tr>
   <tr>
     <td valign="top">듀얼암 포장</td>
     <td valign="top">Packee 듀얼암이 포장 시퀀스를 수행하고 결과를 보고합니다.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-03-04.png" width="220"></td>
   </tr>
 </table>
 
+
 ## 2-3. 관리자 모니터링
+
+<p align="center">
+  <img src="assets/video/monitor.gif" width="60%">
+  <br>
+  <sub>실시간 모니터링 시연</sub>
+</p>
 
 <table>
   <tr>
     <th style="width:18%">주요 기능</th>
     <th style="width:60%">설명</th>
-    <th style="width:22%">이미지</th>
   </tr>
   <tr>
     <td valign="top">대시보드</td>
     <td valign="top">현재 작업 수·로봇 수, 2D 맵 위치를 실시간 표시합니다.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-05-01_1로봇정보표시.png" width="220"></td>
   </tr>
   <tr>
     <td valign="top">로봇 상태</td>
-    <td valign="top">위치·배터리·진행율·현재 작업을 조회합니다.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-05-01_6진행율확인.png" width="220"></td>
+    <td valign="top">위치·배터리·진행율·현재 작업을 조회합니다.</td>    
   </tr>
   <tr>
     <td valign="top">재고/작업 이력</td>
     <td valign="top">재고 관리, 작업 히스토리 조회를 지원합니다.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-05-02_1재고정보조회.png" width="220"></td>
   </tr>
 </table>
 
 ## 2-4. 직원 보조(야간/재고 보충)
 
+<p align="center">
+  <img src="assets/video/following.gif" width="30%">
+  <br>
+  <sub>직원 추종 및 보조 시연</sub>
+</p>
+
 <table>
   <tr>
     <th style="width:18%">주요 기능</th>
     <th style="width:60%">설명</th>
-    <th style="width:22%">이미지</th>
   </tr>
   <tr>
     <td valign="top">모드 시작</td>
     <td valign="top">야간 모드 시작 및 보조 기능 활성화.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-06-01.png" width="220"></td>
   </tr>
   <tr>
     <td valign="top">Following</td>
     <td valign="top">음성 명령을 LLM이 해석해 follow 모드 전환, 직원 추종.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-06-02_2.png" width="220"></td>
   </tr>
   <tr>
     <td valign="top">음성 주행</td>
     <td valign="top">장소 명령을 추출해 주행 토픽 발행, Nav2로 지정 위치 이동.</td>
-    <td valign="top" align="center"><img src="assets/images/SC-06-04.png" width="220"></td>
   </tr>
 </table>
+
 
 ---
 

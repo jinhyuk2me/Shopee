@@ -1,19 +1,14 @@
 <p align="center">
-  <img src="https://github.com/addinedu-roscamp-7th/roscamp-repo-1/blob/main/assets/images/banner.jpg?raw=true" alt="Banner">
+  <img src="assets/banner.jpg" alt="Banner">
 </p>
 
 <p align="center">
   <a href="https://docs.google.com/presentation/d/1-Q_TZLXfFrFoZFN47uKtgcyI_h5BXLpoyHWAMogy4Dw/edit?slide=id.p#slide=id.p">
     <img src="https://img.shields.io/badge/PRESENTATION-GoogleSlides-yellow?style=for-the-badge&logo=google-slides&logoColor=white" alt="발표자료">
   </a>
-  <a href="docs/README.md">
-    <img src="https://img.shields.io/badge/DOCS-Architecture%20%26%20Requirements-blue?style=for-the-badge" alt="설계문서">
-  </a>
 </p>
 
-# 원격 쇼핑 로봇 플랫폼 Shopee
-
-## 📚 목차
+# 📚 목차
 - [1. 프로젝트 개요](#1-프로젝트-개요)
 - [2. 주요 기능](#2-주요-기능)
 - [3. 핵심 기술](#3-핵심-기술)
@@ -153,7 +148,8 @@
 ## 2-4. 직원 보조(야간/재고 보충)
 
 <p align="center">
-  <img src="assets/video/following.gif" width="30%">
+  <img src="assets/video/following.gif" height="300">
+  <img src="assets/images/follow.png" height="300">
   <br>
   <sub>직원 추종 및 보조 시연</sub>
 </p>
@@ -190,11 +186,11 @@
   <table>
     <tr>
       <td align="center">
-        <img src="assets/images/정밀주차_순서도_3.png" height="200"><br>
+        <img src="assets/images/정밀주차_순서도_3.png" height="300"><br>
         <sub>정밀 주차 로직</sub>
       </td>
       <td align="center">
-        <img src="assets/images/aruco_after.png" height="200"><br>
+        <img src="assets/images/aruco_after.png" height="300"><br>
         <sub>ArUco 인식 전처리 (Grayscale)</sub>
       </td>
     </tr>
